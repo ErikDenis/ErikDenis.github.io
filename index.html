@@ -15,9 +15,13 @@
 		p {
 			font-family: sans-serif;
 		}
-		#TopBarRec{
+		.TopBarRec img, div {
+      height: 100%;
+      width: auto;
+    }
+		.TopBarRec{
 			width: 100%;
-			height: auto;
+			height: 4em;
 			box-shadow: 0px 3px 4px -1px rgba(50, 50, 50, 0.5);
 			background: rgb(255, 160, 150);
 			padding: 10px;
@@ -35,15 +39,15 @@
 </head>
 <body>
 	<!-- TopBar -->
-	<div style="z-index: 1" id="TopBarRec">
-		<div style="margin-left: 100px">
+	<div class="TopBarRec" style="z-index: 1">
+		<div style="box-sizing: inherit; margin-left: 6em;">
 			<img src="Logo_h250.png">
-			<img style="height: 60px; position: absolute;" src="ML_h250.png">
+			<img src="ML_h250.png">
 		</div>
 	</div>
 	<!-- Content -->
-	<div style="align: center">
-		<div style="margin-left: 100px; margin-right: 100px; z-index: -1;" id="ContentRec">
+	<div>
+		<div style="margin-left: 6.5em; margin-right: 6.5em; z-index: -1;" id="ContentRec">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget velit aliquet sagittis id consectetur purus ut. Etiam erat velit scelerisque in dictum non. Dolor purus non enim praesent elementum. Libero id faucibus nisl tincidunt eget nullam non nisi est.</p>
 		</div>
 	</div>
