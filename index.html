@@ -4,52 +4,62 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Мастерская Любви ❤ сделано с Любовью</title>
-	<style type="text/css">
-		body{
-			margin: 0;
-			background-color: #e6e6e6;
-		}
-		div{
-			margin: 0;
-		}
-		p {
-			font-family: sans-serif;
-		}
-		.TopBarRec img, div {
-      height: 100%;
-      width: auto;
-    }
-		.TopBarRec{
-			width: 100%;
-			height: 4em;
-			box-shadow: 0px 3px 4px -1px rgba(50, 50, 50, 0.5);
-			background: rgb(255, 160, 150);
-			padding: 10px;
-		}
-		#ContentRec{
-			width: auto;
-			height: auto;
-			max-width: 500px;
-			position: sticky;
-			background-color: white;
-			padding: 10px;
-		}
-
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!--
+	Получение элемента: document.querySelector("abc")
+	abc - классы с точкамию (".MContentBox .MainContentBox")
+	 -->
 	<!-- TopBar -->
-	<div class="TopBarRec" style="z-index: 1">
-		<div style="box-sizing: inherit; margin-left: 6em;">
+	<div class="TopBar" id="TopBarRec" style="z-index: 1;">
+		<div class="TopBarLogoIMG">
 			<img src="Logo_h250.png">
-			<img src="ML_h250.png">
+			<img style="max-height: 85%; vertical-align: top" src="ML_h250.png">
 		</div>
 	</div>
 	<!-- Content -->
-	<div>
-		<div style="margin-left: 6.5em; margin-right: 6.5em; z-index: -1;" id="ContentRec">
+	<div class="MContentBox" style="text-align: center;" id="ContentBox">
+		<div class="MainContentBox" style="display: inline-block; z-index: -1;" id="MainContentBox-Rec">
+			<div class="sep"></div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget velit aliquet sagittis id consectetur purus ut. Etiam erat velit scelerisque in dictum non. Dolor purus non enim praesent elementum. Libero id faucibus nisl tincidunt eget nullam non nisi est.</p>
+			<div class="sep"></div>
+			<div class="PhotosSlider">
+				<img src="ТФ.png">
+			</div>
+			<div class="sep"></div>
 		</div>
 	</div>
+	<script>
+		let ContB = document.querySelector(".MContentBox .MainContentBox")
+		let tbLogoIMG = document.querySelector(".TopBar .TopBarLogoIMG")
+		let TopBar = document.querySelector(".TopBar")
+		console.log(ContB)
+
+		// Window onresize func
+		WinOnResize()
+		window.onresize = function() { WinOnResize() }
+		function WinOnResize() {
+		 let WindW = window.innerWidth
+		 let WindH = window.innerHeight
+		 if (WindW/WindH >= 3/4) {
+			 if (WindW*0.7 >= 1000) {
+				 ContB.style.maxWidth = "1000px"
+				 tbLogoIMG.style.marginLeft = (WindW-1000)/2 + "px"
+			 } else {
+				 ContB.style.maxWidth = WindW*0.7 + "px"
+				 tbLogoIMG.style.marginLeft = (WindW*0.3)/2 + "px"
+			 }
+		 } else {
+			 if (WindW > 500) {
+				 ContB.style.maxWidth = WindW + "px"
+			 } else {
+				 ContB.style.maxWidth = "500px"
+		 		}
+				tbLogoIMG.style.marginLeft = "20px"
+			}
+		}
+		// ===
+	</script>
 </body>
 </html>
