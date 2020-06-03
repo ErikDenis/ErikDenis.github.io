@@ -12,7 +12,7 @@
 	abc - классы с точкамию (".MContentBox .MainContentBox")
 	 -->
 	<!-- TopBar -->
-	<div class="TopBar" id="TopBarRec" style="z-index: 1;">
+	<div class="TopBarRec tbPC" style="z-index: 1;">
 		<div class="TopBarLogoIMG">
 			<img src="TopBarLogo.png">
 		</div>
@@ -31,9 +31,9 @@
 	</div>
 	<script>
 		let ContB = document.querySelector(".MContentBox .MainContentBox")
-		let tbLogoIMG = document.querySelector(".TopBar .TopBarLogoIMG")
-		let TopBar = document.querySelector(".TopBar")
-		console.log(ContB)
+		let tbLogoIMG = document.querySelector(".TopBarRec .TopBarLogoIMG")
+		let TopBar = document.querySelector(".TopBarRec")
+		console.log(TopBar)
 
 		// Функция при ресайзе окна
 		WinOnResize()
@@ -41,7 +41,7 @@
 		function WinOnResize() {
 		 let WindW = window.innerWidth
 		 let WindH = window.innerHeight
-		 if (WindW/WindH >= 3/4) {
+		 if (WindW/WindH >= 3/4) { // На ПК
 			 if (WindW*0.7 >= 1000) {
 				 ContB.style.maxWidth = "1000px"
 				 tbLogoIMG.style.marginLeft = (WindW-1000)/2 + "px"
@@ -49,13 +49,15 @@
 				 ContB.style.maxWidth = WindW*0.7 + "px"
 				 tbLogoIMG.style.marginLeft = (WindW*0.3)/2 + "px"
 			 }
-		 } else {
+			 TopBar.classList.remove("tbM")
+		 } else { // На Мобиле
 			 if (WindW > 500) {
 				 ContB.style.maxWidth = WindW + "px"
 			 } else {
 				 ContB.style.maxWidth = "500px"
 		 		}
 				tbLogoIMG.style.marginLeft = "20px"
+ 			 	TopBar.classList.add("tbM")
 			}
 		}
 		// ===
