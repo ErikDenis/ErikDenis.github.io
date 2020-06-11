@@ -23,26 +23,20 @@
 			<div class="sep"></div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget velit aliquet sagittis id consectetur purus ut. Etiam erat velit scelerisque in dictum non. Dolor purus non enim praesent elementum. Libero id faucibus nisl tincidunt eget nullam non nisi est.</p>
 			<div class="sep"></div>
-			<div class="PhotosSlider UnSelectble">
-			  <div class="slider-inner">
-			    <div class="slides" id="slides">
-			      <img src="https://i.imgur.com/zHLWgXy.png"/>
-			      <img src="https://i.imgur.com/zHLWgXy.png"/>
-			      <img src="https://i.imgur.com/zHLWgXy.png"/>
-			    </div>
-			  </div>
-			  <div class="SliderButton">
-			    <div style="border-right: 0; border-radius: 0 0 0 0.5em;">
-			      <p onclick="BackIMG()">
-			        ◀
-			      </p>
-			    </div>
-			    <div style="border-radius: 0 0 0.5em 0;">
-			      <p onclick="NextIMG()">
-			        ▶
-			      </p>
-			    </div>
-			  </div>
+			<div class="PhotoSliderH UnSelectble">
+				<div class="arrow arrow-L" onclick="BackIMG()">
+					&#9668;
+				</div>
+				<div class="slider-inner" id="slider-inner">
+					<div style="display: flex; width: 100%; transition: all 0.6s;" class="slides" id="slides">
+						<img src="ТФ.png"/>
+						<img src="ТФ.png"/>
+						<img src="ТФ.png"/>
+					</div>
+				</div>
+				<div class="arrow arrow-R" onclick="NextIMG()">
+					&#9658;
+				</div>
 			</div>
 			<script src="JavaScripts\PhotosSlider.js"> </script>
 			<div class="sep"></div>
