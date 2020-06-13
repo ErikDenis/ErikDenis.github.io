@@ -33,10 +33,9 @@ p {
 	vertical-align: middle;
 }
 .arrow {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	position: relative;
 	color: rgb(255, 160, 150);
-	padding: 0.4em;
 	border-style: hidden;
 	border-width: 0;
 	border-style: solid;
@@ -47,11 +46,22 @@ p {
 	background-color: rgb(255, 160, 150);
 	cursor: pointer;
 }
+.arrow p {
+  -o-transform: scaleY(1.4);
+  -ms-transform: scaleY(1.4);
+  -moz-transform: scaleY(1.4);
+  -webkit-transform: scaleY(1.4);
+  transform: scaleY(1.4);
+}
 .arrow-L {
+  padding-left: 0.2em;
+  padding-right: 0.3em;
   border-radius: 0.5em 0 0 0.5em;
 	border-left-width: 2px;
 }
 .arrow-R {
+  padding-left: 0.3em;
+  padding-right: 0.2em;
   border-radius: 0 0.5em 0.5em 0;
 	border-right-width: 2px;
 }
@@ -69,13 +79,31 @@ p {
 }
 /* ============ */
 
+/* BottomBar */
+.BottomBarRec {
+  width: auto;
+  height: 5em;
+  box-shadow: 0px 0px 6px 3px rgba(50, 50, 50, 0.3);
+  background: rgb(255, 160, 150);
+  padding: 10px 0;
+  /* position: relative; */
+}
+/* ========= */
+
 /* MainBox */
 .MainContentBox {
   width: auto;
   height: auto;
+  min-height: 40em;
   background-color: white;
   padding-left: 20px;
   padding-right: 20px;
+  box-shadow: 0px 0px 24px 4px rgba(50, 50, 50, 0.15),
+  inset 0px 6px 4px -4px rgba(50, 50, 50, 0.2),
+  inset 0px -6px 4px -4px rgba(50, 50, 50, 0.2);
+}
+.MainContentBox p {
+  font-size: 14px;
 }
 /* ======= */
 
@@ -86,14 +114,14 @@ p {
 }
 .TopBarRec {
   width: auto;
-  box-shadow: 0px 0px 4px 2px rgba(50, 50, 50, 0.4);
+  box-shadow: 0px 0px 6px 3px rgba(50, 50, 50, 0.3);
   background: rgb(255, 160, 150);
   padding: 10px 0;
-  position: relative;
+  /* position: relative; */
 }
 .tbPC {
-  height: 4em;
+  height: 3em;
 }
 .tbM {
-  height: 3.5em;
-  /* ====== */
+  height: 4em;
+/* ====== */
