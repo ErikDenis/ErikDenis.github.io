@@ -94,7 +94,7 @@ p {
 .MainContentBox {
   width: auto;
   height: auto;
-  min-height: 40em;
+  min-height: 60em;
   background-color: white;
   padding-left: 20px;
   padding-right: 20px;
@@ -103,7 +103,7 @@ p {
   inset 0px -6px 4px -4px rgba(50, 50, 50, 0.2);
 }
 .MainContentBox p {
-  font-size: 14px;
+  font-size: 16px;
 }
 /* ======= */
 
@@ -120,7 +120,7 @@ p {
   /* position: relative; */
 }
 .tbPC {
-  height: 3em;
+  height: 3.5em;
 }
 .tbM {
   height: 4em;
