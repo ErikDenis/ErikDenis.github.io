@@ -1,0 +1,51 @@
+.UnSelectble {
+  ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+body {
+  margin: 0;
+  background-color: #e6e6e6;
+  min-width: 500px
+}
+header {
+	background-color: #F59B4D;
+}
+main {
+	background-color: white;
+	min-height: 1000px
+}
+hr {
+	border-style: none;
+	height: 1.5em;
+	margin: 0;
+}
+footer {
+	background-color: #F59B4D;
+}
+div {
+  margin: 0;
+}
+@font-face {
+	font-family: "Roboto Bold";
+	src: url("/Fonts/Roboto/Roboto-Bold.ttf");
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	font-family: "Roboto Bold";
+}
+p {
+  text-align: left;
+  font-family: sans-serif;
+  margin: 0;
+}
+.sep {
+  width: auto;
+  height: 1.5em
+}
+.MainCenterBox {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1em;
+}
