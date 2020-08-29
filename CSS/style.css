@@ -5,40 +5,110 @@
   -webkit-user-select: none;
 }
 body {
-  margin: 0;
-  background-color: #e6e6e6;
-  min-width: 500px
+	margin: 0;
+	min-width: 400px;
+	background: linear-gradient(90deg, rgba(0,0,0,0) 50%, black 50%, #e6e6e6 1350px), linear-gradient(-90deg, rgba(0,0,0,0) 50%, black 50%, #e6e6e6 1350px);
+	background: -o-linear-gradient(90deg, rgba(0,0,0,0) 50%, black 50%, #e6e6e6 1350px), -o-linear-gradient(-90deg, rgba(0,0,0,0) 50%, black 50%, #e6e6e6 1350px);
+	background: -moz-linear-gradient(90deg, rgba(0,0,0,0) 50%, black 50%, #e6e6e6 1350px), linear-gradient(-90deg, rgba(0,0,0,0) 50%, black 50%, #e6e6e6 1350px);
 }
 header {
+	background-color: #F59B4D;
+	color: white;
+	background: linear-gradient(90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%), linear-gradient(-90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%);
+	background: -o-linear-gradient(90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%), -o-linear-gradient(-90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%);
+	background: -moz-linear-gradient(90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%), -moz-linear-gradient(-90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%);
+}
+header div {
+	border: dotted 4px;
+	border-bottom: none;
 	background-color: #F59B4D;
 }
 main {
 	background-color: white;
-	min-height: 1000px
+	min-height: 1000px;
+	border: dotted 4px;
+	border-top: none;
+	border-bottom: none;
+	border-color: #F59B4D;
+}
+footer {
+	background: linear-gradient(90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%), linear-gradient(-90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%);
+	background: -o-linear-gradient(90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%), -o-linear-gradient(-90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%);
+	background: -moz-linear-gradient(90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%), -moz-linear-gradient(-90deg, #F59B4D 150px, black 50%, rgba(0,0,0,0) 50%);
+	color: white;
+}
+footer div {
+	border: dotted 4px;
+	border-top: none;
+	background-color: #F59B4D;
 }
 hr {
 	border-style: none;
 	height: 2em;
 	margin: 0;
 }
-footer {
-	background-color: #F59B4D;
-}
 div {
   margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	font-family: "Roboto";
+	text
+}
+p {
+	text-align: left;
+	font-family: sans-serif;
+	margin: 0;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url("/Fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+	font-family: "Roboto Italic";
+	src: url("/Fonts/Roboto/Roboto-Italic.ttf");
+}
+@font-face {
+	font-family: "Roboto Black";
+	src: url("/Fonts/Roboto/Roboto-Black.ttf");
+}
+@font-face {
+	font-family: "Roboto Black Italic";
+	src: url("/Fonts/Roboto/Roboto-BlackItalic.ttf");
+}
+@font-face {
+	font-family: "Roboto Light";
+	src: url("/Fonts/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+	font-family: "Roboto Light Italic";
+	src: url("/Fonts/Roboto/Roboto-LightItalic.ttf");
 }
 @font-face {
 	font-family: "Roboto Bold";
 	src: url("/Fonts/Roboto/Roboto-Bold.ttf");
 }
-h1,h2,h3,h4,h5,h6 {
-	margin: 0;
-	font-family: "Roboto Bold";
+@font-face {
+	font-family: "Roboto Bold Italic";
+	src: url("/Fonts/Roboto/Roboto-BoldItalic.ttf");
 }
-p {
-  text-align: left;
-  font-family: sans-serif;
-  margin: 0;
+.Section {
+	font-size: 18px;
+	margin: 0.5em 0;
+	font-weight: bold;
+	font-size: 18;
+	color: #F59B4D;
+	border-bottom: dotted 4px
+}
+.LinkList {
+	font-family: Arial;
+	padding: 0 1.6em
+/*	list-style: circle;*/
+}
+.LinkList li:hover {
+	text-decoration: underline;
+	color: #F59B4D;
+	font-weight: bold;
 }
 .MainCenterBox {
 	max-width: 1000px;
