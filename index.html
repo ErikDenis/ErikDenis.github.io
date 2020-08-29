@@ -11,17 +11,28 @@
 		Получение элемента: document.querySelector("abc")
 		abc - классы с точкамию (".MContentBox .MainContentBox")
 		 -->
-<header>
+<header class="UnSelectble" style="cursor:default">
     <div class="MainCenterBox">
-		<ul style="list-style-type:none">
-			<li>
-			  <h1>ErikDenis</h1>
-			</li>
-				
-			<li>
-				<h1>ErikDenis</h1>
-			</li>
-		</ul>
+      <table width="100%" border="0">
+      </table>
+      <table width="100%" border="0">
+        <tbody>
+          <tr>
+            <td style="width: 50%">
+              <h1>ErikDenis</h1>
+            </td>
+            <td style="text-align: end">
+				<div style="display: inline-flex">
+              		<h2 onclick="window.location.href = '/about.html'" style="cursor:pointer">
+						About me</h2>
+					<div style="width: 2em"></div>
+              		<h2 onclick="window.location.href = '/projects.html'" style="cursor:pointer">
+						My projects</h2>
+            	</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 </header>
 <main class="MainCenterBox">

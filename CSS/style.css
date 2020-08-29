@@ -18,7 +18,7 @@ main {
 }
 hr {
 	border-style: none;
-	height: 1.5em;
+	height: 2em;
 	margin: 0;
 }
 footer {
@@ -40,12 +40,8 @@ p {
   font-family: sans-serif;
   margin: 0;
 }
-.sep {
-  width: auto;
-  height: 1.5em
-}
 .MainCenterBox {
 	max-width: 1000px;
 	margin: 0 auto;
-	padding: 1em;
+	padding: 2em;
 }
