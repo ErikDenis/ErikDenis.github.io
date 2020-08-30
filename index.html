@@ -5,13 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ErikDenis' Projects</title>
 	<link rel="stylesheet" href="CSS/style.css">
-	<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		let Russian = ["RU","AM","BY","MD",
 					   "OS","KG","KZ","UA",
 					   "AB","RO","TJ","UZ",
 					   "IL","PL"]
-		if (!Russian.includes(geoplugin_countryCode())) {
+		let CountyCode
+		$.ajax({
+			url: "https://get.geojs.io/v1/ip/geo.js",
+			dataType: "jsonp",
+			jsonpCallback:"geoip",
+			success: function(data) {
+				CountyCode = data.country_code;
+			}
+		})
+		if (!Russian.includes(CountyCode)) {
 			alert(document.location.protocol + "//" + document.location.host + "/en" + document.location.pathname)
 		}
 	</script>
