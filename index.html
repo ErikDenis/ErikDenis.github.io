@@ -5,23 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ErikDenis' Projects</title>
 	<link rel="stylesheet" href="CSS/style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script async src="https://get.geojs.io/v1/ip/geo.js"></script>
 	<script>
 		let Russian = ["RU","AM","BY","MD",
 					   "OS","KG","KZ","UA",
 					   "AB","RO","TJ","UZ",
 					   "IL","PL"]
-		let CountyCode
-		$.ajax({
-			url: "https://get.geojs.io/v1/ip/geo.js",
-			dataType: "jsonp",
-			jsonpCallback:"geoip",
-			success: function(data) {
-				CountyCode = data.country_code;
+		function geoip(data){
+			let CountyCode = data.country_code;
+			if (!Russian.includes(CountyCode)) {
+				alert(document.location.protocol + "//" + document.location.host + "/en" + document.location.pathname)
 			}
-		})
-		if (!Russian.includes(CountyCode)) {
-			alert(document.location.protocol + "//" + document.location.host + "/en" + document.location.pathname)
 		}
 	</script>
 </head>
