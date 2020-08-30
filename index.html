@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ErikDenis' Projects</title>
-	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="/CSS/style.css">
 	<script async src="https://get.geojs.io/v1/ip/geo.js"></script>
 	<script>
 		let Russian = ["RU","AM","BY","MD",
@@ -14,7 +14,7 @@
 		function geoip(data){
 			let CountyCode = data.country_code;
 			if (!Russian.includes(CountyCode)) {
-				alert(document.location.protocol + "//" + document.location.host + "/en" + document.location.pathname)
+				document.location.href = document.location.protocol + "//" + document.location.host + "/en" + document.location.pathname)
 			}
 		}
 	</script>
@@ -26,19 +26,7 @@
 		 -->
 <header class="UnSelectble" style="cursor:default">
     <div class="MainCenterBox" style="padding: 1em 2em">
-      <table width="100%" border="0">
-        <tbody>
-          <tr>
-            <td style="width: 50%">
-            <h2>ErikDenis</h2>
-			</td>
-            <td style="text-align: end">
-              		<h3 onclick="window.location.href = 'about.html'" style="cursor:pointer">
-				  ENG</h3>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+		<h2>ErikDenis</h2>
     </div>
 </header>
 <main class="MainCenterBox">
