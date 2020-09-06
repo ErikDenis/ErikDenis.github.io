@@ -1,28 +1,27 @@
-let imgQ = document.getElementById("slides").getElementsByTagName("img").length
-let imgS = document.getElementById("slides")
+let PS = [document.getElementById("ps0"),
+          document.getElementById("ps1")]
+let imgS = [PS[0].querySelector("div.slider div"),
+            PS[1].querySelector("div.slider div")]
+let imgQ = [imgS[0].children.length,
+            imgS[1].children.length]
+let CurIMG = [0,0]
 
-let CurIMG = 0
-
-function BackIMG() {
-  // alert("Back")
-  ChangeIMG(-1)
+function BackIMG(psID) {
+  ChangeIMG(-1, psID)
+}
+function NextIMG(psID) {
+	ChangeIMG(1, psID)
 }
 
-function NextIMG() {
-  // alert("Next")
-	ChangeIMG(1)
-}
-
-function ChangeIMG(PLorMI) {
-  CurIMG = CurIMG + PLorMI
-  if (CurIMG > imgQ-1) {
-    CurIMG = 0
+function ChangeIMG(PLorMI, psID) {
+  CurIMG[psID] = CurIMG[psID] + PLorMI
+  if (CurIMG[psID] > imgQ[psID]-1) {
+    CurIMG[psID] = 0
   }
-  if (CurIMG < 0) {
-    CurIMG = imgQ-1
+  if (CurIMG[psID] < 0) {
+    CurIMG[psID] = imgQ[psID]-1
   }
-  if (CurIMG <= imgQ) {
-    imgS.style.transform = "translateX(" + CurIMG*(-100) + "%)"
+  if (CurIMG[psID] <= imgQ[psID]) {
+    imgS[psID].style.transform = "translateX(" + CurIMG[psID]*(-100) + "%)"
   }
-  console.log(CurIMG)
 }

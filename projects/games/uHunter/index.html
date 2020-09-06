@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ErikDenis' Projects</title>
 	<link rel="stylesheet" href="/CSS/style.css">
+	<link rel="stylesheet" href="/CSS/PhotoSlider.css">
 	<script async src="https://get.geojs.io/v1/ip/geo.js"></script>
+	<script src="/JS/PhotosSlider.js"></script>
 	<script>
 		let Russian = ["RU","AM","BY","MD",
 					   "OS","KG","KZ","UA",
@@ -33,43 +35,40 @@
 	<p class="Section">О проекте</p>
 	<p>Это Фентези-игра с элементами RPG, выполненная в 3D-стиле, от третьего лица. Изначально задумывалась как JRPG в 2D Pixel-стиле.</p>
 	<br>
-	<div class="PhotoSliderH UnSelectble">
-		<div class="arrow arrow-L" onclick="BackIMG()">
-			&#9668;
-		</div>
-		<div class="slider-inner" id="slider-inner">
-			<div style="display: flex; width: 100%; transition: all 0.6s;" class="slides" id="slides">
-				<img src="https://i.imgur.com/zHLWgXy.png"/>
-				<img src="https://i.imgur.com/zHLWgXy.png"/>
-				<img src="https://i.imgur.com/zHLWgXy.png"/>
-			</div>
-		</div>
-		<div class="arrow arrow-R" onclick="NextIMG()">
-			&#9658;
+	<div id="ps0" class="PhotoSliderH UnSelectble">
+	<div class="arrow arrow-L" onclick="BackIMG(0)">
+		&#9668;
+	</div>
+	<div class="slider">
+		<div style="display: flex" class="slides">
+			<img src="https://i.imgur.com/zHLWgXy.png"/>
+			<img src="https://i.imgur.com/zHLWgXy.png"/>
+			<img src="https://i.imgur.com/zHLWgXy.png"/>
 		</div>
 	</div>
-	<script src="/JS/PhotosSlider.js"></script>
+	<div class="arrow arrow-R" onclick="NextIMG(0)">
+		&#9658;
+	</div>
+</div>
 	<br>
 	<p class="Section">Процесс разработки</p>
 	<p>Игровой движок: <strong>Unreal Engine 4</strong> (BluePrint)</p>
 	<p>3D-моделирование: <strong>Blender3D</strong></p>
 	<br>
-	<div class="PhotoSliderH UnSelectble">
-		<div class="arrow arrow-L" onclick="BackIMG()">
-			&#9668;
-		</div>
-		<div class="slider-inner" id="slider-inner">
-			<div style="display: flex; width: 100%; transition: all 0.6s;" class="slides" id="slides">
-				<img src="https://i.imgur.com/zHLWgXy.png"/>
-				<img src="https://i.imgur.com/zHLWgXy.png"/>
-				<img src="https://i.imgur.com/zHLWgXy.png"/>
-			</div>
-		</div>
-		<div class="arrow arrow-R" onclick="NextIMG()">
-			&#9658;
+	<div id="ps1" class="PhotoSliderH UnSelectble">
+	<div class="arrow arrow-L" onclick="BackIMG(1)">
+		&#9668;
+	</div>
+	<div class="slider">
+		<div style="display: flex" class="slides">
+			<img src="https://i.imgur.com/zHLWgXy.png"/>
+			<img src="https://i.imgur.com/zHLWgXy.png"/>
 		</div>
 	</div>
-	<script src="/JS/PhotosSlider.js"></script>
+	<div class="arrow arrow-R" onclick="NextIMG(1)">
+		&#9658;
+	</div>
+</div>
 <p>Текстурирование 3D-моделей: <em>не определено</em></p>
 </main>
 <footer>
