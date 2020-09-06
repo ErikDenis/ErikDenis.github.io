@@ -1,11 +1,3 @@
-let PS = [document.getElementById("ps0"),
-          document.getElementById("ps1")]
-let imgS = [PS[0].querySelector("div.slider div"),
-            PS[1].querySelector("div.slider div")]
-let imgQ = [imgS[0].children.length,
-            imgS[1].children.length]
-let CurIMG = [0,0]
-
 function BackIMG(psID) {
   ChangeIMG(-1, psID)
 }
