@@ -9,16 +9,16 @@
 .arrow {
 	font-size: 20px;
 	position: relative;
-	color: grey;
+	color: var(--base-color);
 	padding: 0.25em;
 	border-style: hidden;
 	border-width: 0;
 	border-style: solid;
-	border-color: grey;
+	border-color: var(--base-color);
 }
 .arrow:hover {
 	color: white;
-	background-color: grey;
+	background-color: var(--base-color);
 	cursor: pointer;
 }
 .arrow-L {
