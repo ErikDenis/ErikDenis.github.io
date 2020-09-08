@@ -10,11 +10,11 @@
 body {
 	margin: 0;
 	min-width: 400px;
-	background: linear-gradient(90deg, rgba(0,0,0,0) 50%, black 50%, #e6e6e6 1350px), linear-gradient(-90deg, rgba(0,0,0,0) 50%, black 50%, #e6e6e6 1350px);
+	background: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(150,150,150,255) 50%, #e6e6e6 90%), linear-gradient(-90deg, rgba(0,0,0,0) 50%, rgba(150,150,150,255) 50%, #e6e6e6 90%);
 }
 header {
 	color: white;
-	background: linear-gradient(90deg, var(--base-color) 150px, black 50%, rgba(0,0,0,0) 50%), linear-gradient(-90deg, var(--base-color) 150px, black 50%, rgba(0,0,0,0) 50%);
+	background: linear-gradient(90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%), linear-gradient(-90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%);
 }
 header div.MainCenterBox {
 	border: dotted 4px;
@@ -30,8 +30,8 @@ main {
 	border-color: var(--base-color);
 }
 footer {
-	background: linear-gradient(90deg, var(--base-color) 150px, black 50%, rgba(0,0,0,0) 50%), linear-gradient(-90deg, var(--base-color) 150px, black 50%, rgba(0,0,0,0) 50%);
 	color: white;
+	background: linear-gradient(90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%), linear-gradient(-90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%);
 }
 footer div {
 	border: dotted 4px;
@@ -91,6 +91,13 @@ p {
 @font-face {
 	font-family: "Roboto Bold Italic";
 	src: url("/Fonts/Roboto/Roboto-BoldItalic.ttf");
+}
+.Link {
+	color: var(--base-color);
+	text-decoration: none;
+}
+.Link:hover {
+	text-decoration: underline;
 }
 .Section {
 	font-size: 18px;
