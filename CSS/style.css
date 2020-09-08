@@ -108,15 +108,16 @@ p {
 	border-bottom: dotted 4px;
 }
 .LinkList {
+	color: var(--base-color);
 	font-family: Arial;
 	padding: 0 1.6em;
 /*	list-style: circle;*/
 }
 .LinkList li:hover {
 	text-decoration: underline;
-	color: var(--base-color);
-	font-weight: bold;
+/*	font-weight: bold;*/
 	cursor: pointer;
+	transform:  translateY(-0.05em)
 }
 .MainCenterBox {
 	max-width: 800px;
