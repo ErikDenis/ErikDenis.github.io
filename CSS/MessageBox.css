@@ -1,15 +1,11 @@
 .MessageBox {
-/* 	margin: 1em; */
+	margin: 0 auto 1em;
 	padding: 1em;
 	max-width: 700px;
 	width: auto;
 	height: auto;
 	background: white;
 	box-shadow: 0 0 20px -16px black;
-}
-.MessageBox p {
-	margin: 0;
-	font-family: sans-serif;
 }
 .MessageContent {
 	wight: auto;
