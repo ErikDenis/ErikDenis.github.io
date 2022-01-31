@@ -4,12 +4,14 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ErikDenis' Projects</title>
-	<link rel="stylesheet" href="/CSS/style.css">
-	<link rel="stylesheet" href="/CSS/PhotoSlider.css">
+	<link rel="stylesheet" href="/CSS/colors.css">
 	<link rel="stylesheet" href="/CSS/MessageBox.css">
-	<script async src="https://get.geojs.io/v1/ip/geo.js"></script>
+	<link rel="stylesheet" href="/CSS/PhotoSlider.css">
+	<link rel="stylesheet" href="/CSS/style.css">
 	<script src="/JS/includeHTML.js"></script>
 	<script src="/JS/PhotosSlider.js"></script>
+	<script src="blogs.js"></script>
+	<script src="/JS/blogReader.js"></script>
 </head>
 <body>
 <!--
@@ -37,36 +39,15 @@
 	<br>
 	<p>
 	На сайте CodePen.io куда удобнее делать такие вещи, как слайдер фотографий.
-	Изменил один параметр и сразу увидел результат. И не надо загружать на git,
-	ждать когда всё загрузится и вспоминать, что ты вообще делал.
+	Изменил один параметр и сразу увидел результат.
 	</p>
 	<br>
 	<p>
 	Про GitHub Desktop, думаю, рассказывать особо нечего. Обновляю, с его помощью, git.
 	</p>
 	<br>
-	<div>
-		<div class="MessageBox">
-			<div style="display:flex;">
-				<h3>Сообщения об обновлениях</h3>
-				<p style="font-size: 14px; text-align: right; margin-left: auto; color: gray">09.09.2020</p>
-			</div>
-			<div class="MessageContent">
-				<p>Сделал такой небольшой блок сообщения, где я смогу писать об обновлениях проекта. Типа блога разработки. Буду писать о более-менее серьёзых изменениях</p>
-				<br>
-				<p>Не знаю, буду ли я оптимизировать, улучшать или ещё что-то с этим. Сейчас мне приходится всё писать вручную</p>
-				<br>
-				<p>Так как раньше таких сообщений небыло, напишу немного о том, что уже готово:</p>
-				<ul>
-					<li>
-						<p>Слайдер Фотографий + Оптимизированно. Его можно посмотреть отдельно на CodePen <a href="https://codepen.io/ErikDenis/pen/QWNaMvj">здесь</a>.</p>
-					</li>
-					<li>
-						<p>Определение страны пользователя и смена локализации. Работает, но пока что есть только русский.</p>
-					</li>
-				</ul>
-			</div>
-		</div>
+	<div class="BlogList">
+		<script>includeBlogs()</script>
 	</div>
 	<br>
 </main>

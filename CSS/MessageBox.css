@@ -1,14 +1,18 @@
+.BlogList{
+	display: flex;
+    flex-direction: column-reverse;
+}
 .MessageBox {
 	margin: 0 auto 1em;
 	padding: 1em;
 	max-width: 700px;
-	width: auto;
+	width: 100%;
 	height: auto;
-	background: white;
-	box-shadow: 0 0 20px -16px black;
+	background: var(--background-color);
+	box-shadow: 0 0 20px -16px rgb(255, 0, 0);
 }
 .MessageContent {
-	wight: auto;
+	width: auto;
 	height: auto;
 	margin-top: 1em;
 	padding: .5em;
@@ -17,4 +21,10 @@
 .MessageContent ul {
 	padding-left: 1em;
     margin: .5em;
+}
+.MessageDate {
+	font-size: 14px;
+	text-align: right;
+	margin-left: auto;
+	color: var(--date-color);
 }
