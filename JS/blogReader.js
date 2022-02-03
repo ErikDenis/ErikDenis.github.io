@@ -25,7 +25,7 @@ function includeBlogs() {
             var e_content = document.createElement('div')
             
             e_MessageBox.className = 'MessageBox'
-            e_TitleLine.style = 'display:flex;'
+            e_TitleLine.style = 'display:flex;justify-content: space-between;'
             e_Title.textContent = msg.querySelector('title').textContent
             e_date.className = 'MessageDate'
             e_date.textContent = msg.querySelector('date').textContent

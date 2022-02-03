@@ -3,13 +3,18 @@
     flex-direction: column-reverse;
 }
 .MessageBox {
-	margin: 0 auto 1em;
+	color: var(--base-color);
+	margin: 1em 0 0;
 	padding: 1em;
-	max-width: 700px;
-	width: 100%;
+	width: auto;
 	height: auto;
+	border: solid 0.4em;
+	border-radius: 0.4em 0.4em 0 0;
+	border-left: none;
+	border-right: none;
+	border-bottom: dashed 0.2em;
 	background: var(--background-color);
-	box-shadow: 0 0 20px -16px rgb(255, 0, 0);
+	/* box-shadow: 0 0 20px -16px rgb(0, 0, 0); */
 }
 .MessageContent {
 	width: auto;

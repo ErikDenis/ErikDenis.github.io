@@ -1,3 +1,6 @@
+:root {
+}
+
 .UnSelectble {
   ms-user-select: none;
   -moz-user-select: none;
@@ -6,33 +9,53 @@
 }
 body {
 	margin: 0;
-	min-width: 400px;
-	background: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(150,150,150,255) 50%, #e6e6e6 90%), linear-gradient(-90deg, rgba(0,0,0,0) 50%, rgba(150,150,150,255) 50%, #e6e6e6 90%);
+	min-width: var(--width-min);
+	/* background: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(150,150,150,255) 50%, #e6e6e6 90%), linear-gradient(-90deg, rgba(0,0,0,0) 50%, rgba(150,150,150,255) 50%, #e6e6e6 90%); */
 }
 header {
+	overflow-x: hidden;
+	position: fixed;
+	width: -webkit-fill-available;
+	display: flex;
 	color: white;
-	background: linear-gradient(90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%), linear-gradient(-90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%);
+	background: var(--base-color);
+	/* background: linear-gradient(90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%), linear-gradient(-90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%); */
 }
-header div.MainCenterBox {
-	border: dotted 4px;
+header .MainCenterBox {
+	width: 100%;
+	height: 2em;
+	margin:  auto;
+	padding: 2em;
+	border: solid 0.4em;
+	border-radius: 1em 1em 0 0;
 	border-bottom: none;
 	background-color: var(--base-color);
+	box-shadow: 0 0 2em 2em rgba(0, 0, 0, 0.25);
 }
 main {
+	margin:  auto;
+    padding: 5em 2em 2em 2em;
 	background-color: var(--background-color);
-	min-height: 1100px;
-	border: dotted 4px;
+	min-height: 1000px;
+	border: solid 0.4em;
 	border-top: none;
+	/* border-radius: 0 0 1em 1em; */
 	border-bottom: none;
 	border-color: var(--base-color);
 }
 footer {
+	overflow-x: hidden;
+	background: var(--base-color);
 	color: white;
-	background: linear-gradient(90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%), linear-gradient(-90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%);
+	/* background: linear-gradient(90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%), linear-gradient(-90deg, var(--base-color) 10%, rgba(0,0,0,150) 50%, rgba(0,0,0,0) 50%); */
 }
-footer div {
-	border: dotted 4px;
+footer .MainCenterBox {
+	box-shadow: 0 0 2em 2em rgba(0, 0, 0, 0.25);
+	margin:  auto;
+	padding: 2em;
+	border: solid 0.4em;
 	border-top: none;
+	border-radius: 0 0 1em 1em;
 	background-color: var(--base-color);
 }
 br {
@@ -117,7 +140,5 @@ p {
 	transform:  translateY(-0.05em)
 }
 .MainCenterBox {
-	max-width: 800px;
-	margin:  auto;
-	padding: 2em;
+	max-width: var(--width-max);
 }

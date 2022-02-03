@@ -3,4 +3,7 @@
     --text-color: black;
 	--base-color: #de6e25;
     --date-color: gray;
+    
+	--width-min: 400px;
+	--width-max: 800px;
 }
